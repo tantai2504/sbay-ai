@@ -293,7 +293,7 @@
         let apinew = "https://chatgpt.sbaygroup.com/chatgpt.php";
         fetch(apinew, {
             method: "POST",
-            mode: "cors",
+            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json",
                 "X-WP-Nonce": "1637a74fd5",
