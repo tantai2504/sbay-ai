@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<?php
+header("Access-Control-Allow-Origin: *");
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sbayai</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                                 d="M9 7a5 5 0 0 1 10 0v8a7 7 0 1 1-14 0V9a1 1 0 0 1 2 0v6a5 5 0 0 0 10 0V7a3 3 0 1 0-6 0v8a1 1 0 1 0 2 0V9a1 1 0 1 1 2 0v6a3 3 0 1 1-6 0z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <input type="file" id="fileUpload" name="fileUpload" class="file-upload-input" accept=".pdf,.doc,.docx">
+                        <input type="file" id="fileUpload" name="fileUpload" class="file-upload-input" accept=".pdf,.xlsx,.txt,.png,.jpg,.jpeg">
                     </label>
                     <button><span>Gửi</span></button>
                 </div>
@@ -39,6 +42,6 @@
     </div>    
 </body>
 
-<script src="app.js"></script>
+<script src="./js/index.js?v=<?php echo time(); ?>"></script>
 
 </html>
