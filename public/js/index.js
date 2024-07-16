@@ -1,6 +1,8 @@
+
 (function(){
     $('#msbo').on('click', function(){
       $('body').toggleClass('msb-x');
+      $(this).find('i').toggleClass('fa-angle-left fa-angle-right');
     });
   }());
 
